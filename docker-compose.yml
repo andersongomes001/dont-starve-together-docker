@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  dst:
+    build: ./
+    volumes:
+      - backup-data:/home/steam/
+volumes:
+  backup-data: {}
