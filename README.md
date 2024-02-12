@@ -5,11 +5,10 @@ This Docker setup allows you to easily host a dedicated server for the "Don't St
 ## Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/) installed on your system.
-
+- [klei DontStarveTogether TOKEN](https://accounts.klei.com/account/game/servers?game=DontStarveTogether) Create a token in klei site.
 ## Usage
 
 1. Clone this repository to your local machine:
-
    ```bash
    git clone https://github.com/andersongomes-dev/dont-starve-together-docker.git
    echo "TOKEN" > dont-starve-together-docker/MyDediServer/cluster_token.txt
