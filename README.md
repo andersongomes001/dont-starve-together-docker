@@ -12,3 +12,5 @@ This Docker setup allows you to easily host a dedicated server for the "Don't St
 
    ```bash
    git clone https://github.com/andersongomes-dev/dont-starve-together-docker.git
+   echo "TOKEN" > dont-starve-together-docker/MyDediServer/cluster_token.txt
+   ```
