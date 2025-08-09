@@ -4,5 +4,6 @@ services:
     volumes:
       - backup-data:/home/steam/
       - ./cluster_token.txt:/home/steam/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
+      - ./cluster.ini:/home/steam/.klei/DoNotStarveTogether/MyDediServer/cluster.ini
 volumes:
   backup-data: {}
