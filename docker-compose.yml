@@ -1,8 +1,8 @@
-version: '3.7'
 services:
   dst:
-    build: ./
+    image: andersongomes001/dontstarve-together-server
     volumes:
       - backup-data:/home/steam/
+      - ./cluster_token.txt:/home/steam/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
 volumes:
   backup-data: {}

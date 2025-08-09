@@ -13,8 +13,7 @@ RUN curl -s http://media.steampowered.com/installer/steamcmd_linux.tar.gz | tar 
 RUN mkdir -p /home/steam/.klei/DoNotStarveTogether/
 COPY ./MyDediServer/ /home/steam/.klei/DoNotStarveTogether/MyDediServer/
 COPY ./run_dedicated_servers.sh /home/steam/run_dedicated_servers.sh
-RUN echo ${TOKEN} > /home/steam/tk.txt
-RUN ls -lath /home/steam/
+RUN echo "mytoken" > /home/steam/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
 RUN chmod +x /home/steam/run_dedicated_servers.sh
 WORKDIR /home/steam/steamcmd
 RUN useradd -m steam && chown -R steam:steam /home/steam
