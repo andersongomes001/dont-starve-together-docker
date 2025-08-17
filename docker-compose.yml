@@ -1,9 +1,12 @@
 services:
   dst:
     image: andersongomes001/dontstarve-together-server
+    restart: always
     volumes:
       - backup-data:/home/steam/
       - ./cluster_token.txt:/home/steam/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
       - ./cluster.ini:/home/steam/.klei/DoNotStarveTogether/MyDediServer/cluster.ini
+      - ./modoverrides.lua:/home/steam/.klei/DoNotStarveTogether/MyDediServer/Master/modoverrides.lua
+      - ./dedicated_server_mods_setup.lua:/home/steam/dontstarvetogether_dedicated_server/mods/dedicated_server_mods_setup.lua
 volumes:
   backup-data: {}
